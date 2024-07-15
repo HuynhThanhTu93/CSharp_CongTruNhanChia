@@ -5,7 +5,7 @@
         Console.OutputEncoding = System.Text.Encoding.UTF8;
         Console.WriteLine("Chào thế giới!");
         Console.WriteLine("Chương trinh tổng 2 số!");
-        int so1, so2, tong, tru, nhan, chia;
+        int so1, so2, tong, tru, nhan, chia, phandu;
         try
         {
             //int so = Console.ReadLine(); Chương trình báo lỗi do int là số còn ReadLine là String(chuỗi), phải thêm nhue bên dưới.
@@ -48,6 +48,8 @@
             Console.WriteLine("Không thể chia cho 0");
             return;
         }
+        phandu = so1 % so2;
+        Console.WriteLine($"Phần dư của {so1} chia cho {so2} la {phandu}");
     }
 
     private static int TinhTong(int a, int b) { return a + b; }
